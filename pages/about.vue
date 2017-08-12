@@ -1,12 +1,19 @@
 <template>
-  <article>About Page</article>
+  <JBStats/>
 </template>
 
 <script>
-  import Stats from '~/components/Stats.vue'
-  //import Navigation from '~/components/Navigation.vue'
 
-  export default {}
+
+import JBStats from '~/components/JBStats.vue';
+
+//why doesn't this function run when i call it here?
+JBStats
+
+export default {components:{
+  JBStats
+}}
+  
 </script>
 
 <style>

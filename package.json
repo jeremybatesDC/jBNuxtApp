@@ -6,6 +6,8 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/pwa": "latest",
+    "es6-promise": "^4.1.1",
+    "isomorphic-fetch": "^2.2.1",
     "node-sass": "^4.5.3",
     "nuxt": "latest",
     "sass-loader": "^6.0.6",
