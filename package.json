@@ -8,7 +8,8 @@
     "@nuxtjs/pwa": "latest",
     "node-sass": "^4.5.3",
     "nuxt": "latest",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
     "dev": "nuxt",

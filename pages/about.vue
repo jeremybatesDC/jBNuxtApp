@@ -3,12 +3,10 @@
 </template>
 
 <script>
-  //import Logo from '~/components/Logo.vue'
+  import Stats from '~/components/Stats.vue'
   //import Navigation from '~/components/Navigation.vue'
 
-  export default {
-    //components: {Logo, Navigation},
-  }
+  export default {}
 </script>
 
 <style>

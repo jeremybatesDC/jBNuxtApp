@@ -1,8 +1,12 @@
 <template>
   <div class="logo">
-    logo
+    Logo
   </div>
 </template>
+
+<script>
+export default{}
+</script>
 
 <style>
 
