@@ -1,7 +1,7 @@
 <template>
     <div id="jBStatsInnerWrapper">
       
-      Stats
+      {{statsLabel}}
 
     </div>
 </template>
@@ -28,7 +28,11 @@ var JBStats = (function(){
 
 //JBStats();
 
-export default{components: {
+export default{
+  data: function(){
+    return { statsLabel: 'Stats Go Here' }
+  },
+  components: {
   JBStats
 }};
 
