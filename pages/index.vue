@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       
-      <logo/>
+     
       <h1 class="title">
         jB
       </h1>
@@ -16,12 +16,9 @@
   </section>
 </template>
 
-<script>
-  import Logo from '~/components/Logo.vue'
-  
+<script>  
 
   export default {
-    components: {Logo},
     data () {
       return {
         online: true
@@ -48,32 +45,22 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .container {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
 
-
-  .network {
-    font-weight: 400;
-    font-size: 1rem;
-  }
-
-  .network .circle {
+  .circle {
     display: inline-block;
     width: 1rem;
     height: 1rem;
     background: green;
     padding: .1rem .5rem;
     border-radius: 1rem;
-  }
-
-  .network.offline .circle {
-    background: red;
+    &.offline {
+      background: red;
+    }
   }
 </style>
