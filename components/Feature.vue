@@ -3,40 +3,43 @@
         <div class="flexWrapper">
           <header class="row">
             <div class="col-xs-7">
-                <h2>Google (HTC) Pixel</h2>
-                <p>Android 8</p>
+                <h2>{{theData.phoneName}}</h2>
+                <p>{{theData.opSys}}</p>
             </div>
             <div class="col-xs-2">
-              4G LTE
+              {{theData.wirelessGen}}
             </div>
             <div class="col-xs-3">
-                <time>2015-2016</time>
+                <time>{{theData.lifespan}}</time>
             </div>
           </header>
 
           <div class="row">
             <div class="col-xs-3">
               <aside>
-              stats
+              
+              <span id="headlineLeft">
+                {{theData.message}}
+              </span>
               </aside>
             </div>
             <div class="col-xs-6">
               <figure>
-                <img src="../assets/img/opt/google_pixel_400x400.jpg" alt="Google Pixel"/>
+                <img :src="theData.imgSrc" alt="Google Pixel"/>
               </figure>
             </div>
             <div class="col-xs-3">
               <aside>
-                stats
+                {{theData.message}}
               </aside>
             </div>
           </div>
           <footer class="row">
             <div class="col-xs-3">
-              Cause(s) of Death
+              {{theData.causeOfDeath}}
             </div>
             <div class="col-xs-9">
-              Epitath
+              {{theData.epitath}}
             </div>
           </footer>
         </div>
@@ -44,8 +47,24 @@
 </template>
 
 <script>
-
-  export default {};
+  let theData = {
+    phoneName: 'Google (HTC) Pixel'
+    ,opSys: 'Android 8 Oreo'
+    ,message: 'Add Stats here'
+    ,wirelessGen: '4G LTE'
+    ,lifespan: '2015-2016'
+    ,causeOfDeath: 'tradeIn'
+    ,epitath: 'A good phone indeed'
+    ,imgSrc: 'http://placehold.it/400x400'
+    //,imgSrc: '/_nuxt/img/opt/google_pixel_400x400.jpg'
+  }
+  export default {
+    data:function(){
+      return { 
+        theData
+      }
+    }
+  };
 
 </script>
 

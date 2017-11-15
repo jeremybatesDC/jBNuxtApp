@@ -128,10 +128,12 @@
 
 <script>  
   import Feature from '~/components/Feature.vue';
+  
   export default {
     components: {Feature}
   }
 
+  
 
 
 </script>
