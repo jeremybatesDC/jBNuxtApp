@@ -12,7 +12,14 @@
 
 <style lang="scss" scoped>
 
-
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	background: rgba(#fff, .5);
+}
 .nav__link {
 	font-size: 1rem;
 	text-transform: uppercase;
