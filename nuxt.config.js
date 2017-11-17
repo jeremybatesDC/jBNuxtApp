@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Build configuration
   */
+  mode: 'spa',
   build: {
     //vendor: ['JBStats']
     extend(config) {
@@ -33,5 +34,7 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa'
-  ]
+  ],
+  //mode: 'spa'
+
 }

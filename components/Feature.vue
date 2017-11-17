@@ -1,49 +1,49 @@
 <template>
   <article id="feature">
-        <div class="flexWrapper">
-          <header class="row">
-            <div class="col-xs-7">
-                <h2>{{theData.phoneName}}</h2>
-                <p>{{theData.opSys}}</p>
-            </div>
-            <div class="col-xs-2">
-              {{theData.wirelessGen}}
-            </div>
-            <div class="col-xs-3">
-                <time>{{theData.lifespan}}</time>
-            </div>
-          </header>
-
-          <div class="row">
-            <div class="col-xs-3">
-              <aside>
-              
-              <span id="headlineLeft">
-                {{theData.message}}
-              </span>
-              </aside>
-            </div>
-            <div class="col-xs-6">
-              <figure>
-                <img :src="theData.imgSrc" alt="Google Pixel"/>
-              </figure>
-            </div>
-            <div class="col-xs-3">
-              <aside>
-                {{theData.message}}
-              </aside>
-            </div>
-          </div>
-          <footer class="row">
-            <div class="col-xs-3">
-              {{theData.causeOfDeath}}
-            </div>
-            <div class="col-xs-9">
-              {{theData.epitath}}
-            </div>
-          </footer>
+    <div class="flexWrapper">
+      <header class="row">
+        <div class="col-xs-7">
+            <h2>{{theData.phoneName}}</h2>
+            <p>{{theData.opSys}}</p>
         </div>
-    </article>
+        <div class="col-xs-2">
+          {{theData.wirelessGen}}
+        </div>
+        <div class="col-xs-3">
+            <time>{{theData.lifespan}}</time>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <aside>
+          
+          <span id="headlineLeft">
+            {{theData.message}}
+          </span>
+          </aside>
+        </div>
+        <div class="col-xs-6">
+          <figure>
+            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" :data-src="theData.imgSrc" alt="Google Pixel"/>
+          </figure>
+        </div>
+        <div class="col-xs-3">
+          <aside>
+            {{theData.message}}
+          </aside>
+        </div>
+      </div>
+      <footer class="row">
+        <div class="col-xs-3">
+          {{theData.causeOfDeath}}
+        </div>
+        <div class="col-xs-9">
+          {{theData.epitath}}
+        </div>
+      </footer>
+    </div>
+  </article>
 </template>
 
 <script>
@@ -64,7 +64,16 @@
         theData
       }
     }
+    // async asyncData ({ params }) {
+    //   let { data } = await axios.get(`https://my-api/posts/${params.id}`)
+    //   return { title: data.title }
+    // }
+
   };
+
+
+  //on click, get the appropriate phone record and refresh the view... 
+
 
 </script>
 

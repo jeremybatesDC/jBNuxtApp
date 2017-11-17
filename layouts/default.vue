@@ -1,19 +1,51 @@
 <template>
   <div class="defaultView__wrapper">
     <!-- <logo/> -->
-    <navigation/>
+    <!-- <navigation/> -->
     <main>
     	<nuxt/>
 	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
   </div>
 </template>
 
 
 <script>
-import Navigation from '~/components/Navigation.vue'
+import Navigation from '~/components/Navigation.vue';
+
+
+var CustomLazySVGjpgImageFunctionWrapper = (function(){
+
+  function customLazySVGjpgImageFunct(){
+
+
+  	//this needs a resizer i think unfortunately for safari looks like...
+
+
+    var imageElements = [...document.querySelectorAll('image')];
+    console.log(imageElements);
+    // imageElements[0].attr()
+
+    imageElements.map(function(thisImageElement){
+    	var theDataLink = thisImageElement.getAttribute('data-xlink:href');
+    	thisImageElement.setAttribute('xlink:href', theDataLink)
+    	console.log(theDataLink);
+    })
+  }
+
+  window.addEventListener('load', customLazySVGjpgImageFunct, false);
+
+})();
+    
+
+  
+
 export default {
-  components: {Navigation}
+  components: {Navigation, CustomLazySVGjpgImageFunctionWrapper}
 }
+
+
+
 </script>
 
 
