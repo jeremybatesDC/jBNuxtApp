@@ -24,9 +24,10 @@
           </aside>
         </div>
         <div class="col-xs-6">
-          <figure>
+            image
+         <!--  <figure>
             <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" :data-src="theData.imgSrc" alt="Google Pixel"/>
-          </figure>
+          </figure> -->
         </div>
         <div class="col-xs-3">
           <aside>
@@ -83,6 +84,9 @@
          
   //box-shadow: 1rem 1rem 1rem rgba(#000, .5), -1rem -1rem 1rem rgba(#000, .5);
   position:relative;
+  display: grid;
+  height: 100%;
+  background:yellow;
   .flexWrapper {
     //display: flex;
     //flex-direction: column;
