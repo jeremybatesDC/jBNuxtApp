@@ -19,7 +19,7 @@ var CustomLazySVGjpgImageFunctionWrapper = (function(){
   function customLazySVGjpgImageFunct(){
 
 
-  	//this needs a resizer i think unfortunately for safari looks like...
+  	//this needs a resizer i think unfortunately for safari looks
 
 
     var imageElements = [...document.querySelectorAll('image')];

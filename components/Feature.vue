@@ -84,11 +84,11 @@
   //box-shadow: 1rem 1rem 1rem rgba(#000, .5), -1rem -1rem 1rem rgba(#000, .5);
   position:relative;
   .flexWrapper {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
     //puts header at top and footer at bottom
     //justify-content: space-between;
-    height: 100%;
+    //height: 100%;
     padding:1em;
     [data-active="grid__wrapper--ACTIVE"] & {
       //position:relative;
