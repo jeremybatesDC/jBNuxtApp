@@ -35,6 +35,5 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa'
   ],
-  //mode: 'spa'
 
 }

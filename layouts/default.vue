@@ -14,19 +14,29 @@
 import Navigation from '~/components/Navigation.vue';
 
 
+(function consoleGreetings(){
+	var colophoneText = 'Colophone'
+	console.log(`${colophoneText}
+		'Transparent' JPGs with SVG clippath. Via https://css-tricks.com/transparent-jpg-svg/
+		CSS Grid
+		Lazyloading
+		Progressive Web App (lighthouse score of)
+
+	`);
+})();
+
+
 var CustomLazySVGjpgImageFunctionWrapper = (function(){
 
   function customLazySVGjpgImageFunct(){
   	//this needs a resizer i think unfortunately for safari looks
 
     var imageElements = [...document.querySelectorAll('image')];
-    console.log(imageElements);
     // imageElements[0].attr()
 
     imageElements.map(function(thisImageElement){
     	var theDataLink = thisImageElement.getAttribute('data-xlink:href');
     	thisImageElement.setAttribute('xlink:href', theDataLink)
-    	console.log(theDataLink);
     })
   }
 
