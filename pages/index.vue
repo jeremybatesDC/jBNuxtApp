@@ -1,7 +1,9 @@
 <template>
   <section class="grid__wrapper" data-active="grid__wrapper--ACTIVE">
 
-    <feature/>
+    <!-- <feature/> -->
+
+    <featureInitial/>
 
     <article id="1">
       <figure>
@@ -303,9 +305,10 @@
 
 <script>  
   import Feature from '~/components/Feature.vue';
+  import FeatureInitial from '~/components/FeatureInitial.vue';
   
   export default {
-    components: {Feature}
+    components: {Feature, FeatureInitial}
   }
 
   
@@ -321,7 +324,7 @@ article {
   padding: 0;
 
   background: red;
-  overflow: hidden;
+  //overflow: hidden;
   &:nth-child(even){
     background:blue;
   }

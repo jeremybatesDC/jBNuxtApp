@@ -20,8 +20,8 @@ import Navigation from '~/components/Navigation.vue';
 		'Transparent' JPGs with SVG clippath. Via https://css-tricks.com/transparent-jpg-svg/
 		CSS Grid
 		Lazyloading
-		Progressive Web App (lighthouse score of)
-
+		Progressive Web App (lighthouse scores of: )
+		After visiting a couple times, it will prompt to download.
 	`);
 })();
 
@@ -111,6 +111,8 @@ ul, ol, hr{
 
 blockquote {
 	display:block;
+	margin:0;
+	padding:0;
 }
 
 p {
